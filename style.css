@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    overflow: hidden;
+    top: 0;
+    width: 200%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.content-container {
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.nav-item {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 100px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: white;
+    color: black;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin-top: 100px;
+    right: 30px;
+}
+
+.profile img {
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bio {
+    max-width: 100%;
+    padding: 20px;
+    text-align: left;
+}
+
+.profile, .container, .about {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.about {
+    left: 50%;
+    max-width: 600px;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+}
